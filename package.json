@@ -1,0 +1,23 @@
+{
+  "name": "cryptocadena",
+  "version": "1.0.0",
+  "description": "A blockchain and crypto currency learning excersise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "E. Celis",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ecelis/cryptocadena.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ecelis/cryptocadena/issues"
+  },
+  "homepage": "https://github.com/ecelis/cryptocadena#readme"
+}
