@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --watchAll",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "npm run start-redis ; nodemon index.js",
+    "start-redis": "docker run -d -p 6379:6379 redis"
   },
   "keywords": [],
   "author": "E. Celis",
@@ -24,7 +25,9 @@
   },
   "homepage": "https://github.com/ecelis/cryptocadena#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "hex-to-binary": "^1.0.1"
+    "hex-to-binary": "^1.0.1",
+    "redis": "^3.0.2"
   }
 }
