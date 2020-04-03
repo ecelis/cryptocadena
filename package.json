@@ -4,13 +4,16 @@
   "description": "A blockchain and crypto currency learning excersise.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "E. Celis",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^25.2.3"
+    "jest": "^25.2.3",
+    "nodemon": "^2.0.2"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/ecelis/cryptocadena#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "hex-to-binary": "^1.0.1"
   }
 }
