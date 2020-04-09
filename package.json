@@ -10,6 +10,9 @@
     "dev-peer": "cross-env GENERATE_PEER_PORT='true' nodemon index.js",
     "start-redis": "docker run -d -p 6379:6379 redis"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "keywords": [],
   "author": "E. Celis",
   "license": "ISC",
@@ -28,9 +31,11 @@
   "homepage": "https://github.com/ecelis/cryptocadena#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "elliptic": "^6.5.2",
     "express": "^4.17.1",
     "hex-to-binary": "^1.0.1",
     "redis": "^3.0.2",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "uuid": "^7.0.3"
   }
 }
