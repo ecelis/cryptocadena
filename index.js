@@ -7,6 +7,7 @@ const TransactionPool = require('./wallet/transaction-pool');
 const Wallet = require('./wallet');
 const TransactionMiner = require('./app/transaction-miner');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const blockchain = new BlockChain();
@@ -17,6 +18,8 @@ const transactionMiner = new TransactionMiner({ blockchain, transactionPool, wal
 
 const DEFAULT_PORT = 3000;
 const ROOT_NODE_ADDRESS = `http://localhost:${DEFAULT_PORT}`
+
+app.use(cors());
 
 app.use(bodyParser.json());
 

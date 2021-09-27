@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
+import App from './components/App';
 
 render(
-    <div>Crypo in react</div>,
+    <App />,
     document.getElementById('root')
 );
