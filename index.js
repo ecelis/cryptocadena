@@ -6,6 +6,7 @@ const PubSub = require("./app/pubsub");
 const TransactionPool = require('./wallet/transaction-pool');
 const Wallet = require('./wallet');
 const TransactionMiner = require('./app/transaction-miner');
+const path = require('path');
 
 const app = express();
 const blockchain = new BlockChain();
@@ -86,6 +87,8 @@ app.get(`${api}/wallet-info`, (req, res) => {
         })
     });
 });
+
+app.use('/', express.static(path.join(__dirname, 'client', 'dist')))
 
 const syncWithRootState = () => {
     request({ url: `${ROOT_NODE_ADDRESS}/api/blocks` },
