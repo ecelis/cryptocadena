@@ -15,6 +15,10 @@ class Blocks extends Component {
         console.log(this.state);
         return (
             <div>
+                <br />
+                <div>
+                    <Link to='/'>Home</Link>
+                </div>
                 <h3>Blocks</h3>
                 {this.state.blocks.map(block => {
                     return(
